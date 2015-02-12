@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="all" href="bower_components/leaflet/dist/leaflet.css"/>
+    <style type="text/css">
+
+        .map {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<script src="bower_components/react/react.js"></script>
+<script src="bower_components/react/JSXTransformer.js"></script>
+<script src="bower_components/leaflet/dist/leaflet.js"></script>
+<script type="text/jsx" src="src/reactmap.jsx"></script>
+
+<script type="text/jsx">
+      React.render(
+        <Map lat="60.0" lon="10.0" zoom="10"/>,
+        document.getElementsByTagName("body")[0]
+      );
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "react-map",
+  "version": "0.0.0",
+  "authors": [
+    "Atle Frenvik Sveen <atle@frenviksveen.net>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
