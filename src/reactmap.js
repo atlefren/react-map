@@ -1,4 +1,4 @@
-var Map = React.createClass({
+var Map = React.createClass({displayName: "Map",
 
     createMap: function (element) {
         var map = L.map(element);
@@ -24,6 +24,6 @@ var Map = React.createClass({
     },
 
     render: function () {
-        return (<div className="map"></div>);
+        return (React.createElement("div", {className: "map"}));
     }
 });
