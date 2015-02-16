@@ -28,6 +28,10 @@ module.exports = function(grunt) {
         files: 'src/**/*.jsx',
         tasks: 'default',
       },
+    },
+    build: {
+      tasks: ['default'],
+      gitAdd: 'package.json bower.json dist/*'
     }
   });
 
@@ -37,6 +41,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.loadNpmTasks('grunt-react');
+
+  grunt.loadNpmTasks('grunt-bump-build-git');
 
   // Default task(s).
   grunt.registerTask('default', ['react', 'uglify']);
