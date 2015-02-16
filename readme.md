@@ -13,11 +13,13 @@ Properties
 * lon (required): initial longitude of map
 * zoom (required): initial zoom level of map
 * createMap (optional): function that takes a DOM-element and creates a map, the default is quite simple:
-    
-    function (element) {
-        var map = L.map(element);
-        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-        return map;
-    }
+
+```javascript    
+function (element) {
+    var map = L.map(element);
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    return map;
+}
+```
