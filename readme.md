@@ -23,3 +23,7 @@ function (element) {
     return map;
 }
 ```
+
+Demo
+----
+See http://code.atlefren.net/react-map/index.html
